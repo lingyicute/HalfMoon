@@ -9,11 +9,22 @@
     <title>半月历险</title>
     <style>
         @font-face {
-          font-family: 'Nebulove';
-          src: url('Nebulove.woff2') format('woff2');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
+            font-family: 'Nebulove';
+            src: url('Nebulove.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
         }
     </style>
 </head>
@@ -1781,6 +1792,7 @@
             0% {
                 opacity: 0
             }
+
             100% {
                 opacity: 1
             }
@@ -1839,24 +1851,30 @@
             height: 100%
         }
     </style>
-    <div id="hplogo" tabindex="0" aria-label="{{LOGO_ALT_TEXT_HTML}}" role="region" title="{{LOGO_ALT_TEXT_HTML}}" dir="{{LANGUAGE_DIRECTION}}">
+    <div id="hplogo" tabindex="0" aria-label="{{LOGO_ALT_TEXT_HTML}}" role="region" title="{{LOGO_ALT_TEXT_HTML}}"
+        dir="{{LANGUAGE_DIRECTION}}">
         <div id="ddlDomRoot">
-            <div id="ddlContentRoot" class="ddl-content-root" dir="{{LANGUAGE_DIRECTION}}"></div><button id="ctaRoot" tabindex="0" aria-hidden="false" title="{{LOGO_ALT_TEXT_HTML}}"><div id="moon-cta-container"><img class="moonCta" id="moon-static" src="/logo.svg" width=500 height=200 alt="" tabindex="-1" aria-hidden="true" draggable="false"/></div></button></div>
+            <div id="ddlContentRoot" class="ddl-content-root" dir="{{LANGUAGE_DIRECTION}}"></div><button id="ctaRoot"
+                tabindex="0" aria-hidden="false" title="{{LOGO_ALT_TEXT_HTML}}">
+                <div id="moon-cta-container"><img class="moonCta" id="moon-static" src="/logo.svg" width=500 height=200
+                        alt="" tabindex="-1" aria-hidden="true" draggable="false" /></div>
+            </button>
+        </div>
     </div>
     <script nonce="vvQUg_ftvwqDWxy9huPe-g">
-        (function() {
-            var d = function(a) {
-                    var b = 0;
-                    return function() {
-                        return b < a.length ? {
-                            done: !1,
-                            value: a[b++]
-                        } : {
-                            done: !0
-                        }
+        (function () {
+            var d = function (a) {
+                var b = 0;
+                return function () {
+                    return b < a.length ? {
+                        done: !1,
+                        value: a[b++]
+                    } : {
+                        done: !0
                     }
-                },
-                e = function(a) {
+                }
+            },
+                e = function (a) {
                     var b = typeof Symbol != "undefined" && Symbol.iterator && a[Symbol.iterator];
                     if (b) return b.call(a);
                     if (typeof a.length == "number") return {
@@ -1864,7 +1882,7 @@
                     };
                     throw Error("a`" + String(a));
                 },
-                f = function(a) {
+                f = function (a) {
                     for (var b, c = []; !(b = a.next()).done;) c.push(b.value);
                     return c
                 };
@@ -1874,16 +1892,16 @@
              SPDX-License-Identifier: Apache-2.0
             */
             var g = this || self;
-            var h = function(a, b) {
-                    var c = document.createElement("script");
-                    c.async = !0;
-                    b && (c.onload = b);
-                    c.src = a;
-                    document.body.appendChild(c)
-                },
-                k = function(a, b) {
+            var h = function (a, b) {
+                var c = document.createElement("script");
+                c.async = !0;
+                b && (c.onload = b);
+                c.src = a;
+                document.body.appendChild(c)
+            },
+                k = function (a, b) {
                     var c = a.shift();
-                    c && h(c, function() {
+                    c && h(c, function () {
                         b();
                         k(a, b)
                     })
@@ -1913,7 +1931,7 @@
                     q = JSON.parse("[]"),
                     r = [].concat(p instanceof Array ? p : f(e(p)), q instanceof Array ? q : f(e(q))),
                     t = 0,
-                    u = function() {
+                    u = function () {
                         t++;
                         t >= r.length && h("/moon.js")
                     };
@@ -1924,24 +1942,24 @@
         }).call(this);
     </script>
     <script nonce="vvQUg_ftvwqDWxy9huPe-g">
-        (function() {
-            var f = function(a) {
-                    var b = 0;
-                    return function() {
-                        return b < a.length ? {
-                            done: !1,
-                            value: a[b++]
-                        } : {
-                            done: !0
-                        }
+        (function () {
+            var f = function (a) {
+                var b = 0;
+                return function () {
+                    return b < a.length ? {
+                        done: !1,
+                        value: a[b++]
+                    } : {
+                        done: !0
                     }
-                },
-                h = typeof Object.defineProperties == "function" ? Object.defineProperty : function(a, b, c) {
+                }
+            },
+                h = typeof Object.defineProperties == "function" ? Object.defineProperty : function (a, b, c) {
                     if (a == Array.prototype || a == Object.prototype) return a;
                     a[b] = c.value;
                     return a
                 },
-                k = function(a) {
+                k = function (a) {
                     a = ["object" == typeof globalThis && globalThis, a, "object" == typeof window && window, "object" == typeof self && self, "object" == typeof global && global];
                     for (var b = 0; b < a.length; ++b) {
                         var c = a[b];
@@ -1950,24 +1968,24 @@
                     throw Error("a");
                 },
                 l = k(this),
-                m = function(a, b) {
+                m = function (a, b) {
                     if (b) a: {
-                        var c = l;a = a.split(".");
+                        var c = l; a = a.split(".");
                         for (var d = 0; d < a.length - 1; d++) {
                             var e = a[d];
                             if (!(e in c)) break a;
                             c = c[e]
                         }
-                        a = a[a.length - 1];d = c[a];b = b(d);b != d && b != null && h(c, a, {
+                        a = a[a.length - 1]; d = c[a]; b = b(d); b != d && b != null && h(c, a, {
                             configurable: !0,
                             writable: !0,
                             value: b
                         })
                     }
                 };
-            m("Symbol", function(a) {
+            m("Symbol", function (a) {
                 if (a) return a;
-                var b = function(g, Z) {
+                var b = function (g, Z) {
                     this.g = g;
                     h(this, "description", {
                         configurable: !0,
@@ -1975,18 +1993,18 @@
                         value: Z
                     })
                 };
-                b.prototype.toString = function() {
+                b.prototype.toString = function () {
                     return this.g
                 };
                 var c = "jscomp_symbol_" + (Math.random() * 1E9 >>> 0) + "_",
                     d = 0,
-                    e = function(g) {
+                    e = function (g) {
                         if (this instanceof e) throw new TypeError("b");
                         return new b(c + (g || "") + "_" + d++, g)
                     };
                 return e
             });
-            m("Symbol.iterator", function(a) {
+            m("Symbol.iterator", function (a) {
                 if (a) return a;
                 a = Symbol("Symbol.iterator");
                 for (var b = "Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array".split(" "), c = 0; c < b.length; c++) {
@@ -1994,23 +2012,23 @@
                     typeof d === "function" && typeof d.prototype[a] != "function" && h(d.prototype, a, {
                         configurable: !0,
                         writable: !0,
-                        value: function() {
+                        value: function () {
                             return aa(f(this))
                         }
                     })
                 }
                 return a
             });
-            var aa = function(a) {
-                    a = {
-                        next: a
-                    };
-                    a[Symbol.iterator] = function() {
-                        return this
-                    };
-                    return a
-                },
-                n = function(a) {
+            var aa = function (a) {
+                a = {
+                    next: a
+                };
+                a[Symbol.iterator] = function () {
+                    return this
+                };
+                return a
+            },
+                n = function (a) {
                     var b = typeof Symbol != "undefined" && Symbol.iterator && a[Symbol.iterator];
                     if (b) return b.call(a);
                     if (typeof a.length == "number") return {
@@ -2018,12 +2036,12 @@
                     };
                     throw Error("c`" + String(a));
                 },
-                ba = function(a, b) {
+                ba = function (a, b) {
                     a instanceof String && (a += "");
                     var c = 0,
                         d = !1,
                         e = {
-                            next: function() {
+                            next: function () {
                                 if (!d && c < a.length) {
                                     var g = c++;
                                     return {
@@ -2038,14 +2056,14 @@
                                 }
                             }
                         };
-                    e[Symbol.iterator] = function() {
+                    e[Symbol.iterator] = function () {
                         return e
                     };
                     return e
                 };
-            m("Array.prototype.keys", function(a) {
-                return a ? a : function() {
-                    return ba(this, function(b) {
+            m("Array.prototype.keys", function (a) {
+                return a ? a : function () {
+                    return ba(this, function (b) {
                         return b
                     })
                 }
@@ -2057,21 +2075,21 @@
             */
             var ca = /^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;
             var p = {
-                alt: function(a, b) {
+                alt: function (a, b) {
                     a.alt = String(b)
                 },
-                title: function(a, b) {
+                title: function (a, b) {
                     a.title = String(b)
                 },
-                href: function(a, b) {
+                href: function (a, b) {
                     b = String(b);
                     b = ca.test(b) ? b : void 0;
                     b !== void 0 && (a.href = b)
                 },
-                dir: function(a, b) {
+                dir: function (a, b) {
                     a.dir = String(b)
                 },
-                "aria-label": function(a, b) {
+                "aria-label": function (a, b) {
                     a.ariaLabel = String(b)
                 }
             };
